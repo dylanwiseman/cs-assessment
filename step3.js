@@ -1,5 +1,6 @@
 const perf = require('execution-time')();
 
+//Unique Characters Function:
 const hasUniqueChars = (string) => {
     let count = 0 
     for (let i = 0; i < string.length; i++) {
@@ -26,6 +27,7 @@ let resultsUnique = perf.stop();
 
 console.log(resultsUnique)
 
+// Sum Zero Function:
 const sumZero = (array) => {
     let count = 0
     for (let i = 0; i < array.length; i++) {

@@ -1,0 +1,28 @@
+1. Buildkite (continuous integration): Unlike CircleCI, Buildkite is a hybrid platform. They provide a Saas platform to define and vizualize pipelines,
+    but the execution of the jobs happens locally via packages we download. Overall, BuildKite's free plan provides a lot more customizability and control
+    than CirlceCI's. 
+
+    Getting Started:
+        1. Created a free account and it asks me to link an account from an online git repo. 
+        2. Immediately after, it directs me to the new pipeline page, where I can begin making a new pipeline
+        3. Navigate over to the Help > All Documentation > Getting Started
+        4. The getting started documentation is very clear and easy to follow. 
+        5. It instructs you on how to set up an account, install and run an "agent", and run your first build.
+
+    About: 
+        Buildkite's Github repos were updated as recently as a few hours ago, and their big customers include Intercom, REA Group, and Shopify. Founded in 
+        2013, their main competitors are CircleCI and Jenkins.
+
+2. Raygun (real-time error monitoring): Raygun is very similar to Rollbar, and seems better suited for smaller businesses, as they dashboard is quick to 
+    set up and easy to use. Functionality is divided into User Monitoring and Crash Reporting. Monitoring allows us to watch sessions, performace issues,
+    and bottlenecks, and crash reporting provides instant notification of errors inside the app. 
+
+    Getting Started:
+        1. The Getting Started docs are immediately available from the nav bar. 
+        2. The guide begins with an overview of the Raygun products I can choose from.
+        3. I then have to choose between Language Guides and Product Guides.
+        4. Once I choose a language and product, it has detailed instructions on how to set up raygun via the command line.
+
+    About:
+        Raygun is used by companies like Coke, HBO, Domino's, and Microsoft, and has won multiple awards. They started in 2007,
+        and their main competitor is Rollbar. Their github was updated earlier today.

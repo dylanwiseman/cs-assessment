@@ -1,0 +1,23 @@
+Results for the extraLargeArray
+insert 899.254178 ms
+append 4.524774 ms
+
+Results for the largeArray
+insert 7.527457 ms
+append 724.148 μs
+
+Results for the mediumArray
+insert 187.96 μs
+append 178.616 μs
+
+Results for the smallArray
+insert 50.605 μs
+append 108.01 μs
+
+Results for the tinyArray
+insert 44.729 μs
+append 107.685 μs
+
+The insert function is actually faster on the tiny and small arrays, but then scales much worse. With the extra large array, it takes more than 200x as long to run. As the size of the array grows by 10x with each array, the runtime scales differently, increasing slowly at first, then dramatically. 
+
+Unshift is slower than push because it needs to shift every item in the array after it adds the new item. Push only needs to add the new item, wthout shifting any others. 

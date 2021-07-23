@@ -54,3 +54,36 @@ let resultsSum = perf.stop();
 
 console.log(resultsSum)
 
+//Longest Word Function
+
+const longestWord = (array) => {
+    let length = 0
+    for (let i in array) {
+        if (array[i].length > length) {
+            length = array[i].length
+        }
+    }
+    console.log(length)
+}
+
+longestWord(['dog','a','cart','me','friend','you'])
+
+// Pangram Function
+
+const isPangram = (sentence) => {
+    let chars = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    array = sentence.split('')
+    console.log(array)
+    for (let i in sentence) {
+        let index = chars.findIndex(sentence[i].toLowerCase())
+        if (index !== -1) {
+        chars = chars.splice(index,1)
+        }
+    }
+    if (chars = []) {
+        let pangram = true
+    }
+    console.log(pangram)
+}
+
+isPangram("The quick brown fox jumps over the lazy dog!")
